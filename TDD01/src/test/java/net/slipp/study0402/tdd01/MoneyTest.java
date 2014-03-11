@@ -10,5 +10,7 @@ public class MoneyTest extends TestCase
 		Money five = new Money(5);
 		five.times(2);
 		assertEquals(10, five.amount);
+		five.times(3);
+		assertEquals(15,)
 	}
 }
