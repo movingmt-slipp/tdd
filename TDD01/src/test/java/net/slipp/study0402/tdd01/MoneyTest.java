@@ -8,9 +8,17 @@ public class MoneyTest extends TestCase
 {
 	public void testMultiplication() {
 		Dollar five = new Dollar(5);
-		Dollar 培и高 = five.times(2);
-		assertEquals(10, 培и高.amount);
-		Dollar 培и高2 = five.times(3);
-		assertEquals(15,培и高2.amount);
+		Dollar product = five.times(2);
+		assertEquals(10, product.amount);
+		product = five.times(3);
+		assertEquals(15,product.amount);
+		
 	}
+	
+	public void testEquality() {
+		
+		assertTrue(new Dollar)
+		
+	}
+	
 }
