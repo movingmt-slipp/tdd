@@ -7,6 +7,7 @@ import junit.framework.TestSuite;
 public class MoneyTest extends TestCase
 {
 	public void testMultiplication() {
+		five.times(3);
 		assertEquals(10, five.amount);
 	}
 }
