@@ -7,12 +7,11 @@ public class Money
 	public int amount;
 
 	public Money(int amount) {
-		this.amount = amount * 2;
+		this.amount = amount;
 	}
 
-	public void times(int i) {
-		amount = amount * 2;
-		return 
+	public void times(int mu1tiplier) {
+		amount *= mu1tiplier;
 	}
 
 }
