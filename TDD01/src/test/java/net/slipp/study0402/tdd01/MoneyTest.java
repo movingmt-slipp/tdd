@@ -6,5 +6,7 @@ import junit.framework.TestSuite;
 
 public class MoneyTest extends TestCase
 {
-
+	public void testMultiplication() {
+		
+	}
 }
