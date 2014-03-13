@@ -1,10 +1,8 @@
 package net.slipp.study0402.tdd01;
 
 
-public class Dollar
+public class Dollar extends Money
 {
-
-	private int amount;
 
 	public Dollar(int amount) {
 		this.amount = amount;
@@ -14,8 +12,5 @@ public class Dollar
 		return new Dollar(amount * mu1tiplier);
 	}
 
-	public boolean equals(Object object){
-		Dollar dollar = (Dollar) object;
-		return amount == dollar.amount;
-	}
+
 }
