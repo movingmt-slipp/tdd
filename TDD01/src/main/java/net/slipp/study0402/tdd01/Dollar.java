@@ -4,7 +4,7 @@ package net.slipp.study0402.tdd01;
 public class Dollar
 {
 
-	public int amount;
+	private int amount;
 
 	public Dollar(int amount) {
 		this.amount = amount;
