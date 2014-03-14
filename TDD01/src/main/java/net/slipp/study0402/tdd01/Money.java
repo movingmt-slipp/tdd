@@ -1,10 +1,13 @@
 package net.slipp.study0402.tdd01;
 
 public abstract class Money {
-	
+
 	protected int amount;
-	
-	public boolean equals(Object object){
+	protected String currency;
+
+	public abstract Money times(int multiplier);
+
+	public boolean equals(Object object) {
 		Money money = (Money) object;
 		return amount == money.amount && getClass().equals(money.getClass());
 	}
@@ -13,7 +16,9 @@ public abstract class Money {
 		return new Dollar(amount);
 	}
 
-	public abstract Money times(int multiplier);
+	public String currency() {
+		return currency;
+	}
 
 	public static Franc franc(int amount) {
 		return new Franc(amount);
