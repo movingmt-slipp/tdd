@@ -1,6 +1,6 @@
 package net.slipp.study0402.tdd01;
 
-public abstract class Money {
+public class Money {
 
 	protected int amount;
 	protected String currency;
@@ -10,7 +10,9 @@ public abstract class Money {
 		this.currency = currency;
 	}
 
-	public abstract Money times(int multiplier);
+	public Money times(int multiplier){
+		return null;
+	}
 
 	public boolean equals(Object object) {
 		Money money = (Money) object;
