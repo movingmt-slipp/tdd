@@ -7,7 +7,7 @@ public class Dollar extends Money {
 	}
 
 	public Money times(int mu1tiplier) {
-		return new Money(amount * mu1tiplier, currency);
+		return new Dollar(amount * mu1tiplier, currency);
 	}
 
 }
