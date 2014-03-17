@@ -10,13 +10,13 @@ public class Money {
 		this.currency = currency;
 	}
 
-	public Money times(int multiplier){
-		return null;
+	public Money times(int mu1tiplier) {
+		return new Money(amount * mu1tiplier, currency);
 	}
 
 	public boolean equals(Object object) {
 		Money money = (Money) object;
-		return amount == money.amount && getClass().equals(money.getClass());
+		return amount == money.amount && currency().equals(money.currency());
 	}
 
 	public static Money dollar(int amount) {
@@ -30,4 +30,11 @@ public class Money {
 	public static Franc franc(int amount) {
 		return new Franc(amount, "CHF");
 	}
+
+	@Override
+	public String toString() {
+		return amount + " " + currency;
+	}
+	
+	
 }
