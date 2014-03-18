@@ -44,6 +44,6 @@ public class Money implements Expression {
 	public Expression times(int mu1tiplier) {
 		return new Money(amount * mu1tiplier, currency);
 	}
-	
+
 }
 
